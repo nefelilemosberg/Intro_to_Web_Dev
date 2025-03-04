@@ -1,0 +1,11 @@
+body {
+    font: 1.2em / 1.5 sans-serif;
+  }
+
+  .box {
+    padding: 1em;
+    margin-top: 20px;
+    margin-right: 1em;
+    margin-left: 2em;
+    border: 5px dotted;
+  }  

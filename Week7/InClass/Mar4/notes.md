@@ -28,3 +28,9 @@ to create a class -> .bla
 
 multiple classes, you separate with a space eg. class="city main", and the element will be styled with both classes 
 
+
+## Site map
+
+visual representation of a website's structure
+
+wire map 

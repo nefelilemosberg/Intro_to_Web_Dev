@@ -32,6 +32,10 @@ h1 {
   position: relative;
 }
 
+.polaroid:hover{
+  transform: rotate(10deg);
+}
+
 .polaroid img {
   width: 100%;
   height: auto;
@@ -51,3 +55,21 @@ h1 {
 .polaroid a {
     text-decoration: none;
 }
+
+.hover1 {
+  width: 260px;
+  margin: 20px; 
+  display: inline-block;
+  position: relative;
+  transition: width 2s, transform 2s;}
+
+.hover2 {
+  transform: rotateY(180deg);
+  width: 260px; 
+  margin: 20px;
+  transition: width 2s, transform 2s}
+
+
+
+
+

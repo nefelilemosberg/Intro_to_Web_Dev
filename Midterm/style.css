@@ -1,0 +1,16 @@
+body {
+    @font-face {
+        font-family: UntitledSans;
+        src: url("path/to/font/UntitledSans/TestUntitledSans-Medium.otf");
+    }
+}
+
+nav {
+    text-align: left;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: black;
+}

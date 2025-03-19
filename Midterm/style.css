@@ -12,17 +12,40 @@ body {
 
 nav {
     text-align: left;
+    position: fixed;
 }
 
 nav a {
     text-decoration: none;
     margin-left: 10px;
     color: black;
+
 }
 
 nav a:hover, nav a.currentpage {
     text-decoration: underline;
 }
+
+/* Main Page with horizontal scroll effect*/
+
+.scroll {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.scroll img {
+    flex: auto;
+    width: 400px;
+    margin: 10px;
+    padding: 15px;
+    padding-top: 30px;
+}
+
+.scroll img:first-child {
+    width: 1000px;
+}
+
 
 /* About Us Page */
 
@@ -30,6 +53,7 @@ nav a:hover, nav a.currentpage {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    padding-top: 20px;
 }
 
 .text-column {
@@ -51,6 +75,15 @@ p {
 
 .contact p {
     line-height: 10px;
+}
+
+.contact a {
+    color: black;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
 }
 
 .image-column {

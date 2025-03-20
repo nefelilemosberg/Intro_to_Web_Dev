@@ -46,6 +46,20 @@ nav a:hover, nav a.currentpage {
     width: 1000px;
 }
 
+/* Products Page */
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: flex-start;
+    
+}
+
+.images-container img {
+    margin-left: 10px;
+    
+}
 
 /* About Us Page */
 

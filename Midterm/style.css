@@ -61,6 +61,52 @@ nav a:hover, nav a.currentpage {
     margin-left: 10px; 
 }
 
+/* Retreat Page */
+
+.flex-layout {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+.image-row {
+    display: flex;
+    width: 100%;
+}
+
+.image-row img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* Exhibition Page */
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.book-container img {
+    width: 30%;
+    align-items: cente;
+}
+
+.mockup-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    margin: 24px;
+}
+
+.mockup-container img {
+    width: 100%;
+}
+
+
 /* About Us Page */
 
 .flex-container {

@@ -13,6 +13,8 @@ body {
 nav {
     text-align: left;
     position: fixed;
+    background-color: white;
+    padding: 10px;
 }
 
 nav a {
@@ -53,12 +55,10 @@ nav a:hover, nav a.currentpage {
     flex-wrap: wrap;
     justify-content:left;
     align-items: flex-start;
-    
 }
 
 .images-container img {
-    margin-left: 10px;
-    
+    margin-left: 10px; 
 }
 
 /* About Us Page */

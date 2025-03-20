@@ -1,6 +1,6 @@
 @font-face {
     font-family: UntitledSans;
-    src: url("./UntitledSans/TestUntitledSans-Medium.otf");
+    src: url("./Font/UntitledSans/TestUntitledSans-Medium.otf");
 }
 
 /* Navigation bar CSS*/
@@ -21,7 +21,6 @@ nav a {
     text-decoration: none;
     margin-left: 10px;
     color: black;
-
 }
 
 nav a:hover, nav a.currentpage {

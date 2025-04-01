@@ -1,0 +1,51 @@
+/* Nav Bar and General CSS */ 
+
+body {
+    font-family: monospace;
+}
+
+nav {
+    background-color: rgb(162, 233, 162);
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: rgb(6, 80, 6);
+    font-size: 15px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+body {
+    background-color: rgb(245, 199, 206);
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+}
+
+p {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+/*Positioning*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+    font-size: 15px;
+    background-color: rgb(162, 233, 162);
+    color:rgb(6, 80, 6);
+}
+

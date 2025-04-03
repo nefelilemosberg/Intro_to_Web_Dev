@@ -14,7 +14,49 @@
  <body>
       <h1>hello world!</h1>
       <p>this is my website showing everything we have learned so far :)</p>
-    </body>
+ </body>
+
+<body>
+    <div class="relative">relative position</div>
+    <div class="absolute">absolute position</div>
+    <div class="box">box model</div>
+    <div class="container">
+        <div class="polaroid">
+          <p>hello1</p>
+        </div>
+        <div class="polaroid hover1">
+          <p>hello2</p>
+        </div>
+        <div class="polaroid hover2">
+          <p> hello3</p>
+        </div>
+      </div>
+</body>
+
+<div class="wrapper">
+    <div class="box1">
+        <img src="miel.jpg" alt="album cover">
+    </div>
+</div>
+
+<div class="wrapper1">
+    <div class="box2">
+        <img src="miel.jpg" alt="album cover">
+    </div>
+</div>
+
+<button type="button">album</button>
+
+<script>
+    function updateAlbum() {
+      const name = prompt("enter your favorite album");
+      button.textContent = `BEST ALBUM: ${name}`;
+    }
+  
+    const button = document.querySelector("button");
+  
+    button.addEventListener("click", updateAlbum);
+  </script>
 
  <footer>
     fixed footer 

@@ -27,7 +27,7 @@ body {
 
 h1 {
     text-align: center;
-    padding-top: 15px;
+    padding-top: 40px;
     color: white;
 }
 
@@ -49,3 +49,116 @@ footer {
     color:rgb(6, 80, 6);
 }
 
+.relative, .absolute {
+    width: 150px;
+    padding: 10px;
+    color: rgb(255, 74, 135);
+    background-color: rgb(143, 218, 243);
+}
+
+body .relative {
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+body .absolute {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+/*Box Model*/
+
+.box {
+    padding: 10px;
+    margin-top: 60px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 5px dotted;
+    border-color: red;
+}  
+
+  /*Grid with hover*/
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    font-size: 0;
+}
+  
+.polaroid {
+    width: 260px;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+}
+  
+.polaroid:hover{
+    transform: rotate(10deg);
+}
+
+.hover1 {
+    width: 260px;
+    margin: 20px; 
+    display: inline-block;
+    position: relative;
+    transition: width 2s, transform 2s;
+}
+  
+.hover2 {
+    transform: rotateY(180deg);
+    width: 260px; 
+    margin: 20px;
+    transition: width 2s, transform 2s
+}
+
+/*Image Styling*/
+
+.wrapper {
+    display: flex;
+    align-items:flex-end;
+    margin: 20px;
+  }
+
+  
+  .box1 {
+    border: 10px solid darkblue;
+    width: 400px;
+    height: 400px;
+  }
+  
+  img {
+    height: 100%;
+    width: 100%;
+
+  }
+  
+  .wrapper1 {
+    display: flex;
+    align-items:flex-end;
+    margin: 20px;
+  }
+
+  
+  .box2 {
+    border: 10px solid darkblue;
+    width: 400px;
+    height: 400px;
+    opacity: 0.5;
+  }
+
+  img:hover {
+    transform: translate(50px);
+  }
+
+/*Button*/
+
+button {
+    font-size: 50px;
+    font-family: monospace;
+    background-color: rgb(251, 255, 124);
+    border: none;
+    padding: 20px;
+    border-radius: 8px;
+}

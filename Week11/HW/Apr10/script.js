@@ -1,7 +1,7 @@
 const groceries = ["tomato","cucumber","red onion","feta","mango","apple"]
 
 function displayGroceries () {
-    const list=documet.getElementById('groceryList')
+    const list=document.getElementById('groceryList');
     groceries.forEach((item,index)) {
         const li = document.createElement ('li');
         li.textContent = item;

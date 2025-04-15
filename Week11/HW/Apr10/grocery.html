@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1>GROCERY LIST</h1>
+    <h2 id="groceries"></h2>
+    <input type="text" id="myInput" name="myInput" />
+    <button onclick="getInput()">Add Item</button>
+
+    <input type="text" id="removeInput" name="removeInput">
+    <button onclick="removeInput()">Remove Item</button>
+
+    <script>
+      var grocery = ["tomato","cucumber","red onion","feta","mango","apple"];
+      document.getElementById("groceries").innerHTML = grocery.join(", ");
+
+      function getInput() {
+        let inputElement = document.getElementById("myInput");
+        let inputValue = inputElement.value;
+
+        grocery.push(inputValue);
+        document.getElementById("groceries").innerHTML = grocery.join(", ");
+      }
+
+      function removeInput() {
+        let removeElement = document.getElementById("removeInput");
+        let removeValue = removeElement.value;
+
+        let index = grocery.indexOf (removeValue);
+        if (index > -1) {
+            grocery.splice(index, 1);
+        }
+      
+        document.getElementById("groceries").innerHTML = grocery.join(", ");
+      }
+      
+    </script>
+  </body>
+</html>

@@ -31,8 +31,8 @@
       async function loadArt() {
         const res = await fetch("https://api.artic.edu/api/v1/artworks?limit=100");
         const data = await res.json();
-        const artworks = data.data;
-        const config = data.config;
+        const artworks = data.data; // searched this up
+        const config = data.config; // searched this up
 
         const randomArtwork = artworks[Math.floor(Math.random() * artworks.length)];
 

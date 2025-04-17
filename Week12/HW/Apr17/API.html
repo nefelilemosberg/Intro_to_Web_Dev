@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Institute of Chicago API</title>
+    <style>
+      body {
+        font-family: monospace;
+        background: #e0f1fe;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      img {
+        max-width: 100%;
+        margin-bottom: 1rem;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 id="artworks">Loading...</h1>
+      <img id="image" src="" alt="Art piece" style="display: none" />
+      <p id="artist"></p>
+      <button onclick="loadArt()">Reload Art Piece</button>
+    </div>
+
+    <script>
+      async function loadArt() {
+        const res = await fetch("https://api.artic.edu/api/v1/artworks?limit=100");
+        const data = await res.json();
+        const artworks = data.data;
+        const config = data.config;
+
+        const randomArtwork = artworks[Math.floor(Math.random() * artworks.length)];
+
+        document.getElementById("artworks").textContent = randomArtwork.title;
+
+        document.getElementById("artist").textContent = randomArtwork.artist_title;
+
+        const imageId = randomArtwork.image_id;
+        if (imageId) {
+          const imgUrl = `${config.iiif_url}/${imageId}/full/843,/0/default.jpg`; //chat gpt helped me with this part
+          const img = document.getElementById("image");
+          img.src = imgUrl; // and this
+          img.style.display = "block";
+        } else {
+          document.getElementById("image").style.display = "none";
+        }
+      }
+
+      loadArt();
+    </script>
+  </body>
+</html>
